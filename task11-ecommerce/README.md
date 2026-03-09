@@ -1,16 +1,48 @@
-# React + Vite
+# Task 11: E-Commerce Product Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Application Demo
 
-Currently, two official plugins are available:
+![E-Commerce App Flow](././src/assets/ui-overview.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Main Dashboard
 
-## React Compiler
+![Main Dashboard showing products and filters](././src/assets/screenshot-1.png)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### 2. Active Shopping Cart
 
-## Expanding the ESLint configuration
+![Shopping Cart with items and total calculation](././src/assets/screenshot-2.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[cite_start]This is the final integrated project for the React.js Comprehensive Assignment[cite: 1, 281, 282]. [cite_start]It is a complete working application that demonstrates a deep understanding of React components, props, state management, conditional rendering, list rendering, and event handling[cite: 282, 305, 306, 307, 308].
+
+## 🔗 Live Deployment
+
+**Live Demo:** [https://my-react-assignment-tau.vercel.app/]
+[cite_start]_(e.g., https://my-react-assignment-tau.vercel.app/)_ [cite: 334]
+
+---
+
+## ✨ Features Implemented
+
+[cite_start]This application fulfills all core requirements and bonus challenges[cite: 284, 320]:
+
+- [cite_start]**Product Listing:** Displays products fetched from a dummy data array (using Unsplash for reliable images)[cite: 288].
+- [cite_start]**Product Details:** Each card shows the image, name, price, rating, category, and real-time stock status[cite: 289].
+- [cite_start]**Shopping Cart:** Add items, remove items, and adjust quantities directly from the cart[cite: 290, 327].
+- [cite_start]**Dynamic Cart Summary:** Calculates total items, subtotal, and total price including an 8% tax rate[cite: 291, 329].
+- [cite_start]**Filtering & Searching:** Filter products by category or search by product name in real-time[cite: 293, 294].
+- [cite_start]**Sorting:** Sort products by price (Low to High, High to Low)[cite: 296].
+- [cite_start]**Conditional Rendering:** The cart is shown/hidden dynamically, and UI changes based on stock availability and authentication state[cite: 297, 306].
+- [cite_start]**Bonus - Empty States:** Friendly empty states for when the cart is empty or a search yields no results[cite: 324].
+- [cite_start]**Bonus - Clear Cart:** A single click button to empty the entire cart[cite: 325].
+- [cite_start]**Bonus - Responsive Design:** Adapts smoothly to mobile and desktop screens[cite: 322].
+
+---
+
+## 🛠️ Setup Instructions
+
+[cite_start]To run this project locally on your machine[cite: 331]:
+
+1. **Clone the repository** (or navigate to this specific folder):
+   ```bash
+   cd task-11
+   ```
