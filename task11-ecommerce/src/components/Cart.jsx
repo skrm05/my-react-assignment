@@ -2,13 +2,7 @@ import PropTypes from "prop-types";
 import CartItem from "./CartItem";
 import EmptyState from "./EmptyState";
 
-export default function Cart({
-  cartItems,
-  onClose,
-  onUpdateQuantity,
-  onRemove,
-  onClearCart,
-}) {
+function Cart({ cartItems, onClose, onUpdateQuantity, onRemove, onClearCart }) {
   // Total price calculation with tax [cite: 329]
   const subtotal = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -81,3 +75,4 @@ Cart.propTypes = {
   onRemove: PropTypes.func.isRequired,
   onClearCart: PropTypes.func.isRequired,
 };
+export default Cart;

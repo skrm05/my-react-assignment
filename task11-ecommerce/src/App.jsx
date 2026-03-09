@@ -2,9 +2,9 @@ import { useState, useMemo } from "react";
 import Header from "./components/Header";
 import Controls from "./components/Controls";
 import ProductList from "./components/ProductList";
-import Cart from "./components/Cart";
 import EmptyState from "./components/EmptyState";
 import "./App.css";
+import Cart from "./components/Cart";
 
 // Dummy API data with working links [cite: 288, 289]
 const DUMMY_PRODUCTS = [
@@ -13,7 +13,8 @@ const DUMMY_PRODUCTS = [
     title: "Fjallraven - Foldsack No. 1 Backpack",
     price: 109.95,
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=400&q=80",
     rating: { rate: 3.9, count: 120 },
     inStock: true,
   },
@@ -23,7 +24,7 @@ const DUMMY_PRODUCTS = [
     price: 22.3,
     category: "men's clothing",
     image:
-      "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80",
     rating: { rate: 4.1, count: 259 },
     inStock: true,
   },
@@ -32,7 +33,8 @@ const DUMMY_PRODUCTS = [
     title: "Mens Cotton Jacket",
     price: 55.99,
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/71li-ujtlVG._AC_UX679_.jpg",
+    image:
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=400&q=80",
     rating: { rate: 4.7, count: 500 },
     inStock: false,
   },
@@ -41,7 +43,8 @@ const DUMMY_PRODUCTS = [
     title: "WD 2TB Elements Portable External Hard Drive",
     price: 64,
     category: "electronics",
-    image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    image:
+      "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=400&q=80",
     rating: { rate: 3.3, count: 203 },
     inStock: true,
   },
@@ -50,7 +53,8 @@ const DUMMY_PRODUCTS = [
     title: "SanDisk SSD PLUS 1TB Internal SSD",
     price: 109,
     category: "electronics",
-    image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    image:
+      "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=400&q=80",
     rating: { rate: 2.9, count: 470 },
     inStock: true,
   },
@@ -59,7 +63,8 @@ const DUMMY_PRODUCTS = [
     title: "Solid Gold Petite Micropave",
     price: 168,
     category: "jewelery",
-    image: "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+    image:
+      "https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&w=400&q=80",
     rating: { rate: 3.9, count: 70 },
     inStock: true,
   },
@@ -68,7 +73,8 @@ const DUMMY_PRODUCTS = [
     title: "White Gold Plated Princess",
     price: 9.99,
     category: "jewelery",
-    image: "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+    image:
+      "https://images.unsplash.com/photo-1515562141207-7a8ef6fb082e?auto=format&fit=crop&w=400&q=80",
     rating: { rate: 3, count: 400 },
     inStock: true,
   },
@@ -77,7 +83,8 @@ const DUMMY_PRODUCTS = [
     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket",
     price: 56.99,
     category: "women's clothing",
-    image: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+    image:
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=400&q=80",
     rating: { rate: 2.6, count: 235 },
     inStock: false,
   },
