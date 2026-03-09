@@ -1,0 +1,7 @@
+/* Intentionally left blank. 
+Constraint: Do not use any external CSS files [cite: 64] */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #eaeaea;
+}

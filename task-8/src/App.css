@@ -1,0 +1,53 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui;
+}
+.section-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.flex-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.product-card {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 4px;
+  width: 120px;
+  text-align: center;
+}
+.playlist-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  background: #fafafa;
+}
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+input {
+  padding: 8px;
+  margin-right: 10px;
+}
